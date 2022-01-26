@@ -15,17 +15,17 @@ public abstract class State : MonoBehaviour
 
     public virtual void Enter()
     {
-
+        Debug.Log("Entered " + gameObject.name.ToString() + " state.");
     }
 
     public virtual void Process()
     {
-        
+        Debug.Log("Runnning " + gameObject.name.ToString() + " state.");
     }
 
-    public virtual void Exit(State next)
+    public virtual void Exit()
     {
-
+        Debug.Log("Exited " + gameObject.name.ToString() + " state.");
     }
 
     #endregion
